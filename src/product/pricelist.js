@@ -7,7 +7,7 @@ const pricelists = {
     ],
     spotify: [
         // { code: '004', description: 'Spotify Family Plan 1 Bulan', price: '5k' },
-        { code: '005', description: 'Spotify Individual Plan 1 Bulan', price: '10k' },
+        // { code: '005', description: 'Spotify Individual Plan 1 Bulan', price: '10k' },
         // { code: '006', description: 'Spotify Individual Plan 4 Bulan', price: '30k' },
         // { code: '007', description: 'Spotify Family Plan 1 Bulan', price: '15k' },
         // { code: '008', description: 'Spotify Family Plan 2 Bulan', price: '20k' },

@@ -34,8 +34,29 @@ client.on('ready', () => {
 
 // Objek untuk menyimpan data pesanan sementara
 const orderData = {};
+let isBotActive = true;
+
 
 client.on('message', async (message) => {
+    if (message.body.toLowerCase() === 'kinasih off') {
+        isBotActive = false;
+        await message.reply('Ncen wes kakean duit');
+        console.log('Bot dinonaktifkan oleh pengguna.');
+        return; // Hentikan eksekusi setelah bot off
+    }
+
+    // Tangani perintah "kinasih on"
+    if (message.body.toLowerCase() === 'kinasih on') {
+        isBotActive = true;
+        await message.reply('Anjay lagi BU');
+        console.log('Bot diaktifkan kembali oleh pengguna.');
+        return; // Hentikan eksekusi setelah bot on
+    }
+
+    // Jika bot sedang tidak aktif, hentikan eksekusi
+    if (!isBotActive) {
+        return; // Bot tidak merespon pesan apapun
+    }
     if (message.from.includes('@g.us')) {
         return; // Menghentikan eksekusi jika pesan dari grup
     }
@@ -131,8 +152,10 @@ Harga: ${order.price}`;
                     await axios.patch(`${JSON_SERVER_URL}/${order.id}`, { success: 1 });
                     console.log(`Order ID ${id} telah diupdate menjadi sukses.`);
 
-                    const finishedMessage = `Haii ${order.customerName}! Pesanan Anda untuk Produk ${order.product}_${order.code}_${order.id} telah selesai. Terima kasih yaa ✨`;
+                    const finishedMessage = `Haii ${order.customerName}! Pesanan Anda untuk Produk ${order.product}_${order.code}_${order.id} telah selesai. Terima kasih yaa ✨\n\nmintol promotin yaa barangkali temennya butuh 😇`;
                     await client.sendMessage(order.phoneNumber, finishedMessage);
+                    const pamflete = MessageMedia.fromFilePath(path.join(__dirname, '../../public/pamflet.jpg'));
+                    await client.sendMessage(order.phoneNumber, pamflete);
 
                     await message.reply(`Pesanan dengan ID: ${id} telah selesai dan dikonfirmasi ke pelanggan.`);
                 } else {
