@@ -45,7 +45,7 @@ const pricelists = {
         { code: '032', description: 'BStation Sharing 3 Bulan', price: '15k' }
     ],
     capcut: [
-        { code: '033', description: 'Capcut Sharing 1 Tahun', price: '20k' }
+        { code: '033', description: 'Capcut Sharing 1 Bulan', price: '25k' }
     ],
     genflix: [
         { code: '034', description: 'Genflix 1 Akun 1 Device 1 Bulan', price: '10k' },
