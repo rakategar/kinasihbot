@@ -127,6 +127,8 @@ Harga: ${order.price}`;
 
         const fullAdminMessage = `${adminMessage}\nOrder ID: ${orderId}`;
         await client.sendMessage(adminNumber, fullAdminMessage);
+        const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+        await message.react(randomEmoji);
         await message.reply("Terima kasih, pembayaran kamu sedang diproses.");
 
         // Jalankan script berdasarkan produk
