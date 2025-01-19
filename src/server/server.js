@@ -132,9 +132,10 @@ Harga: ${order.price}`;
         orderData[message.from].id = orderId;
 
         const fullAdminMessage = `${adminMessage}\nOrder ID: ${orderId}`;
-        await client.sendMessage(adminNumber, fullAdminMessage);
+
         const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
         await message.react(randomEmoji);
+        await client.sendMessage(adminNumber, fullAdminMessage);
         await message.reply("Terima kasih, pembayaran kamu sedang diproses.");
 
         // Jalankan script berdasarkan produk
@@ -218,7 +219,9 @@ ${pricelist}
 Jika ingin melihat pricelist lainnya, kunjungi website kami di https://kinasihku.com yaa!
 
 Pesan ini dibalas oleh bot Kinasihku!`;
-
+      await message.react("🤔");
+      const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+      await message.react(randomEmoji);
       await message.reply(responseMessage);
       console.log(
         `Auto-reply sent to ${message.from} for product: ${matchedProduct}`
@@ -233,7 +236,9 @@ https://www.kinasihku.com 📍
 Happy Shopping !! 🛍
 
 *Pesan ini dijawab oleh bot Kinasihku!*`;
-
+      await message.react("🤔");
+      const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+      await message.react(randomEmoji);
       await message.reply(welcomeMessage);
     }
   }

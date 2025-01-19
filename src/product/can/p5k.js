@@ -10,6 +10,8 @@ module.exports.handleOrder = async (client, message, order, adminNumber) => {
 
   // Tambahkan reaksi 🤔 pada prompt email
   await message.react("🤔");
+  const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+  await message.react(randomEmoji);
 
   // Fungsi untuk menangani email customer
   const handleEmailResponse = async (emailMessage) => {
@@ -20,6 +22,7 @@ module.exports.handleOrder = async (client, message, order, adminNumber) => {
       const emailToAdmin = `Email yang diberikan oleh ${order.customerName} untuk ${order.product}: ${emailMessage.body}`;
 
       // Kirim email ke admin
+      await message.react(randomEmoji);
       await client.sendMessage(adminNumber, emailToAdmin);
 
       // Balas ke customer
