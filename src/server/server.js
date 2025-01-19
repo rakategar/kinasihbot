@@ -42,7 +42,9 @@ client.on("message", async (message) => {
   if (message.body.toLowerCase() === "kinasih off") {
     isBotActive = false;
     await message.reply("Ncen wes kakean duit");
-    await message.react("🤔"); // React dengan emoji 🤔
+    await message.react("🤔");
+    const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+    await message.react(randomEmoji); // React dengan emoji 🤔
     console.log("Bot dinonaktifkan oleh pengguna.");
     return; // Hentikan eksekusi setelah bot off
   }
@@ -51,7 +53,9 @@ client.on("message", async (message) => {
   if (message.body.toLowerCase() === "kinasih on") {
     isBotActive = true;
     await message.reply("Anjay lagi BU");
-    await message.react("🤔"); // React dengan emoji 🤔
+    await message.react("🤔");
+    const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+    await message.react(randomEmoji); // React dengan emoji 🤔
     console.log("Bot diaktifkan kembali oleh pengguna.");
     return; // Hentikan eksekusi setelah bot on
   }
@@ -89,7 +93,9 @@ Kode Produk: ${selectedProduct.code} dengan harga ${selectedProduct.price}
       );
       await message.reply(invoiceMessage);
       await client.sendMessage(message.from, media);
-      await message.react("🤔"); // React dengan emoji 🤔
+      await message.react("🤔");
+      const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+      await message.react(randomEmoji); // React dengan emoji 🤔
       orderData[message.from] = {
         customerName,
         product: selectedProduct.description,
