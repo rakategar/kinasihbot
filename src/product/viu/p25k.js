@@ -9,7 +9,7 @@ module.exports.handleOrder = async (client, message, order, adminNumber) => {
 Terimakasih telah order di Kinasih !
 Viu Premium sharing 3 Bulan 
 
-EMAIL : LissaZumwalt322@kencurr.my.id
+EMAIL : Monniedecapua@skynomad.biz.id
 PSWRD : masuk123
 
 NOTE : Silakan login langsung tanpa menggunakan Gmail.

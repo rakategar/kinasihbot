@@ -8,8 +8,8 @@ module.exports.handleOrder = async (client, message, order, adminNumber) => {
 
 WeTV 1 Bulan Sharing
 
-email : hati@babydoll.my.id
-Pass : masukaja
+email : 628534337767
+Pass : kinasihku1
 
 Note :
 Login menggunakan nomor hp
