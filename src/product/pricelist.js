@@ -12,7 +12,7 @@ const pricelists = {
         // { code: '007', description: 'Spotify Family Plan 1 Bulan', price: '15k' },
         // { code: '008', description: 'Spotify Family Plan 2 Bulan', price: '20k' },
         // { code: '009', description: 'Spotify Admin', price: '60k' },
-        { code: '010', description: 'Spotify Individual Plan 3 Bulan', price: '40k' }
+        { code: '010', description: 'Spotify Individual Plan 1 Bulan', price: '20k' }
     ],
     vidio: [
         // { code: '014', description: 'Vidio Premier Sharing 1 Bulan', price: '15k' },
@@ -78,7 +78,11 @@ const pricelists = {
         { code: '041', description: 'WeTV Sharing 1 Akun 1 Device 1 Bulan', price: '10k' },
         { code: '042', description: 'WeTV Sharing 1 Akun 1 Device 2 Bulan', price: '15k' },
         { code: '043', description: 'WeTV Sharing 1 Akun 1 Device 3 Bulan', price: '20k' }
-    ]
+    ],
+    disney: [
+        { code: '050', description: 'Disney Sharing Basic 1 Bulan', price: '35k' },
+        { code: '051', description: 'Disney Private Basic 1 Bulan', price: '65k' },
+    ],
 
     // Tambahkan produk lain sesuai kebutuhan...
 };

@@ -11,10 +11,10 @@ module.exports.handleOrder = async (client, message, order, adminNumber) => {
 ▾ garansi 28-30h.
 ▾ jangan terlalu sering pindah device, karena bisa membuat akun kereset.
 
-✎ email: chappertdom.pf@anup1.com
-      password: makan123
-profile: 3
-           ✶ pin: 3232
+✎ email: merahtopi516@gmail.com
+      password: buset123
+profile: E
+           ✶ pin: 5252
 🧾 garansi berlaku jika mengikuti7 RULES WAJIB ini :
 ▾ maximum hanya 1 device
 ▾ dilarang ubah pass, bill, email, no hp, plan. Denda 500k

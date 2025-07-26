@@ -6,9 +6,9 @@ module.exports.handleOrder = async (client, message, order, adminNumber) => {
   const promptEmailMessage = `
 👑 Terimakasih Telah Order di Kinasih 👑
 
-Vidio Premier Platinum Private 1 Bulan alldev
-email : crystalgay615@gmail.com
-pswrd : masuk12345
+Vidio Premier Platinum sharing 1 Bulan mobile
+email : jokosuper312@gmail.com
+pswrd : kinasihku1
 
 ✨ Silahkan login ke aplikasi Vidio premier seperti biasa menggunakan email ( tidak usah login gmail )
 ❌ Dilarang mengganti informasi akun seperti nama akun, password, dll.

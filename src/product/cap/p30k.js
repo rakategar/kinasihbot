@@ -6,10 +6,10 @@ module.exports.handleOrder = async (client, message, order, adminNumber) => {
     const promptEmailMessage = `
 👑 Terimakasih Telah Order di Kinasih 👑
 
-Capcut 1 Tahun Sharing
+Capcut 1 Bulan
 
-Email : milocubewxx@gmail.com
-Pass : Bacarulesnya!
+Email : montana5u9c5@agallagher.id
+Pass : masuk123
 
 
 —: login email, bukan gmail/google/fb/tiktok!
@@ -19,7 +19,7 @@ Pass : Bacarulesnya!
 —: kalau bisa sekali edit langsung export ya, takutnya nanti kelogout sendiri, soalnya sharing sama orang lain
 —: hasil export bisa dilihat orang lain
 
-*Garansi 3 Bulan`;
+*Full Garansi`;
     await message.reply(promptEmailMessage);
 
 };
